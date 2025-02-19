@@ -12,4 +12,3 @@ def init_routes(app):
         http_request = data.get('http_request')
         malicious = is_malicious_request(http_request)
         return jsonify({'malicious': malicious})
-
